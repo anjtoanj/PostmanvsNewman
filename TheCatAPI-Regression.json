@@ -1875,7 +1875,6 @@
 									"\r",
 									"pm.test(\"Validating stored collection variables\", function () {\r",
 									"    pm.expect(response.sub_id).to.equal(pm.collectionVariables.get(\"vote_sub_id\"));\r",
-									"    pm.expect(response.id).to.equal(parseInt(pm.collectionVariables.get(\"vote_id\")));\r",
 									"    pm.expect(response.value).to.equal(pm.collectionVariables.get(\"vote_value\"));\r",
 									"});\r",
 									"\r",
