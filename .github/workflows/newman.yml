@@ -2,7 +2,7 @@ name: Scheduled Newman API Tests
 
 on:
   schedule:
-    - cron: "0 6 * * *"  # Runs every day at 6 AM UTC
+    - cron: "*/3 * * * *"  # Runs every 3 minutes
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
@@ -23,7 +23,7 @@ jobs:
 
       - name: Run Postman Collection
         run: |
-          newman run your-collection.json \
+          newman run pinned/TheCatAPI-Regression.json \
           --environment your-environment.json \
           --reporters cli,junit \
           --reporter-junit-export results.xml
