@@ -633,7 +633,7 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"pm.test(\"Extract ID and save as environment variable\", function () {\r",
+									"pm.test(\"Extract ID and save as collection variable\", function () {\r",
 									"    let responseJson = pm.response.json();  // Parse the JSON response\r",
 									"    if (responseJson.id) {\r",
 									"        pm.collectionVariables.set(\"cat_image_id\", responseJson.id);   // Save ID as collection variable\r",
@@ -684,7 +684,7 @@
 								{
 									"key": "file",
 									"type": "file",
-									"src": "C:/Users/anjto/OneDrive/Desktop/Anjus/Mylearnings/TheCatAPI/catimage.jpeg"
+									"src": "catimage.jpeg"
 								},
 								{
 									"key": "sub_id",
