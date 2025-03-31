@@ -23,7 +23,7 @@ jobs:
 
       - name: Run Postman Collection
         run: |
-          newman run TheCatAPIRegression Suite.postman_collection.json \
+          newman run TheCatAPIRegressionSuite.json \
            --working-dir ${{ github.workspace }}
 
       - name: Upload Test Results
